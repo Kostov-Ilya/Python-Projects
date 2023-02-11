@@ -1,5 +1,25 @@
-def decorator(func):
+def deco_1(func):
+    def wrapper():
+        print('The Mathematical Calculator')
+        print('---------------------------')
         func()
+    return wrapper
+
+def deco_2(func):
+    def wrapper_1():
+        s_0 = str(input('What is your name:')).isalpha()
+        o_0 = str(input('How old are you:')).isnumeric()
+        n_0 = str(input('What is your favorite number:')).isnumeric()
+
+        n_1 = str(input(n_0))
+        s_1 = str(input(s_0))
+        o_1 = str(input(o_0))
+        func()
+    return wrapper_1
+@deco_1
+@deco_2
+
+def calc():
         try:
             print(' ')
             print('The calculator has such mathematical operations:')
@@ -39,16 +59,4 @@ def decorator(func):
 
         except Warning:
             print('Unknown sign!')
-@decorator
-
-def deco_1():
-    print('The Mathematical Calculator')
-    print('---------------------------')
-    s_0 = str(input('What is your name:')).isalpha()
-    o_0 = str(input('How old are you:')).isnumeric()
-    n_0 = str(input('What is your favorite number:')).isnumeric()
-    
-    n_1 = str(input(n_0))
-    s_1 = str(input(s_0))
-    o_1 = str(input(o_0))
-
+calc()
