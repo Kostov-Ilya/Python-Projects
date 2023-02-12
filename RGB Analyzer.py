@@ -6,7 +6,7 @@ main.geometry('200x400')
 
 main.title('RGB Analyzer')
 
-main.iconbitmap(r'C:\Users\Win10_Game_OS\Downloads\Image\bomb.ico')
+# main.iconbitmap(r'C:\Users\Win10_Game_OS\Desktop\Портфолио\Development & Programming\Html\Html Favicons')
 
 def insert_1():
     entry.insert(0, '#FF0000')
