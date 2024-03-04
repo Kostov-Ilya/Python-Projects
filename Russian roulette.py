@@ -85,6 +85,48 @@ def func():
 
                     # Empty
                 )
+                print("---------------------------")
+                print("3 раунд")
+                time.sleep(3)
+                print("---------------------------")
+                print("2 холостых - 1 заряженый")
+                time.sleep(4)
+                print("Шанс выпадения холостого составляет 67% | Шанс выпадения заряженого составляет 33%")
+                time.sleep(5)
+                b_1 = random.randrange(1, 4)
+                if (b_1 == 3):
+                    print(b_1)
+                    print("Вам выпал зараженный!")
+                    time.sleep(3)
+                    print("Вы погибли(")
+                    x_1 = str(input("Вы хотите начать новую игру Y/N: "))
+                    if (x_1 == "Y"):
+                        print("hello World!")
+                    elif (x_1 == "N"):
+                        print("Хорошо!")
+                    else:
+                        print("Ошибка!")
+                        print("Ошибка!")
+                        time.sleep(1)
+                        print("Перезагрузка Игры.")
+                        time.sleep(1.5)
+                        print("Перезагрузка Игры..")
+                        time.sleep(2)
+                        print("Перезагрузка Игры...")
+                        time.sleep(2.5)
+                        print("Перезагрузка Игры....")
+                        time.sleep(3)
+                elif (b_1 < 3):
+                    print(b_1)
+                    print("Вам выпал холостой! Вам повезло...")
+                    time.sleep(2.5)
+                    print("Вы проходите на следующий раунд")
+                    m = str(input("Нажмите Y для продолжения игры: "))
+                    if (m == "Y"):
+                        print(
+
+                            # Empty
+                        )
             else:
                 print("Ошибка!")
                 func()
@@ -93,4 +135,4 @@ def func():
         print("Ошибка!")
         func()
     print("---------------------------")
-func()
+# func()
