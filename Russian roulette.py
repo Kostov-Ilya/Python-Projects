@@ -1,6 +1,8 @@
 import random
 import time
 def func():
+    time.sleep(1)
+    print("Всего в рулетке 3 раунда (1 - средний раунд; 2 - сложный раунд; 3 - легкий раунд")
     print("---------------------------")
     print("1 раунд")
     time.sleep(3)
