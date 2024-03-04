@@ -101,7 +101,9 @@ def func():
                     print("Вы погибли(")
                     x_1 = str(input("Вы хотите начать новую игру Y/N: "))
                     if (x_1 == "Y"):
-                        print("hello World!")
+                        print("Колесо Сансары снова вращается")
+                        time.sleep(3)
+                        func()
                     elif (x_1 == "N"):
                         print("Хорошо!")
                     else:
@@ -135,4 +137,4 @@ def func():
         print("Ошибка!")
         func()
     print("---------------------------")
-# func()
+func()
